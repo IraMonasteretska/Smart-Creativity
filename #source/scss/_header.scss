@@ -1,0 +1,126 @@
+.header {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    transition: .3s ease;
+
+    &.white-bg,
+    &.change-bg {
+        background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(#D8D8D8, .25);
+
+        .header__menu a {
+            color: $black;
+        }
+        .header__logo img.dark{
+            opacity: 1;
+        }
+        .header__logo img.white{
+            opacity: 0;
+        }
+    }
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+
+.header__logo {
+    a{
+        position: relative;
+        display: block;
+        width: 98px;
+        height: 60px;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-size: cover;
+        transition: .3s ease;
+        &.dark{
+            opacity: 0;
+        }
+    }
+}
+
+.header__menu {
+    ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin-right: 60px;
+        list-style: none;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    a {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        transition: .3s ease;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    .submenu a {
+        position: relative;
+        padding-right: 25px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 28%;
+            width: 0;
+            height: 0;
+            width: 8px;
+            height: 8px;
+            transform: rotate(45deg);
+            border-right: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            transition: .3s ease;
+        }
+
+        &:hover {
+            &:after {
+                border-color: #F69524;
+            }
+        }
+    }
+}
+
+.header__button a {
+    color: $orange;
+    padding: 9px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid $orange;
+    transition: .3s ease;
+
+    &:hover {
+        background-color: $orange;
+        color: #fff;
+    }
+}

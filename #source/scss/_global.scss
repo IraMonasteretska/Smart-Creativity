@@ -1,0 +1,144 @@
+//  colors ----------------- //
+
+$black: #222222;
+$orange: #FABB02;
+$violetgradient: linear-gradient(180deg, rgba(85, 92, 139, 1) 0%, rgba(108, 134, 221, 1) 100%);
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+button:focus,
+input:focus {
+    outline: transparent;
+}
+
+
+
+ul,
+ol {
+    margin: 0;
+}
+
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 16px;
+    line-height: 140%;
+}
+
+body {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    color: $black;
+    background-color: #f5f5f5;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.pagewrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.sect-btn {
+    padding: 10px 24px;
+    display: inline-flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    color: #f1f1f1;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: $orange;
+    transition: .3s ease;
+
+    img {
+        margin-left: 12px;
+        width: 16px;
+        height: 16px;
+        transition: .3s ease;
+    }
+
+    &:hover {
+        img {
+            transform: translateX(10px);
+        }
+
+        filter: brightness(110%);
+        color: #fff;
+    }
+}
+
+.secttitle {
+    color: $black;
+    font-size: 46px;
+    line-height: 140%;
+    font-weight: 600;
+}
+
+@media (min-width: 1600px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1460px;
+    }
+}
+
+//  --- === ADAPTIVE === --- //
+
+@media(max-width:1599.8px) {
+    .secttitle {
+        font-size: 40px;
+    }
+}
+@media(max-width:1399.8px) {
+    .secttitle {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .secttitle {
+        font-size: 26px;
+    }
+}
