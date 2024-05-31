@@ -13,12 +13,13 @@
 
 <body>
     <div class="pagewrapper">
-        <header class="header">
+        <header class="header white-bg">
             <div class="container">
                 <div class="header__inner">
                     <div class="header__logo">
-                        <a href="#">
-                            <img src="img/svg/logo.svg" alt="logotype">
+                        <a href="index.html">
+                            <img class="white" src="img/svg/logo.svg" alt="logotype">
+                            <img class="dark" src="img/svg/logo-dark.svg" alt="logotype">
                         </a>
                     </div>
                     <nav class="header__menu">
@@ -32,6 +33,20 @@
                                 <a href="services.html">
                                     Services
                                 </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Lead Generation</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Marketing  Activity</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Design and Creative Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Design and Sales Consultancy and Strategy</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="about.html">
@@ -55,33 +70,158 @@
                             Book a meeting
                         </a>
                     </div>
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </header>
 
         <main class="main">
-            <section class="heroscreen">
-                <img src="img/main_hero_bg.png" alt="image" class="bg">
+            <section class="servtop">
+                <picture>
+                    <source class="bg" srcset="img/main_hero_bg_mobile.png" media="(max-width: 992px)">
+                    <img src="img/services_page_bg.png" alt="image" class="bg">
+                </picture>
                 <div class="container">
-                    <div class="row">
+                    <div class="row align-items-end">
                         <div class="col-lg-6">
-                            <div class="heroscreen__content">
-                                <h1>
-                                    Sales, Marketing And<br>
-                                    Revenue Transformation
-                                    with a creative flair
+                            <div class="servtop__content">
+                                <h1 class="secttitle">
+                                    Services
                                 </h1>
                                 <p>
-                                    Smart Creativity helps you unlock your business potential by providing you with qualified leads, crucial to driving and fuelling sales growth. With proactive telemarketing activity, supported by email and LinkedIn outreach we are able to achieve the best possible results. All tailored to connect your business to the most appropriate individuals in the companies you want to engage with.
+                                    We offer a wide range of services providing a holistic approach to sales and marketing. From lead generation , sales consulting , marketing and design services, we cover every aspect to help your business increase sales and conversions. Our team is dedicated to delivering high quality results and connecting you with your target audience.
                                 </p>
-                                <a href="book-meeting.html" class="sect-btn">
-                                    Book a meeting
-                                </a>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="heroscreen__image">
-                                <img src="img/svg/main_hero_img.svg" alt="image">
+                            <div class="servtop__image">
+                                <img src="img/svg/servpage_top.svg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="container">
+                    <div class="services__inner">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="services__item">
+                                    <div class="services__item-icon">
+                                        <img src="img/svg/service_icon1.svg" alt="icon">
+                                    </div>
+                                    <div class="services__item-content">
+                                        <h3>
+                                            Lead Generation
+                                        </h3>
+                                        <p>
+                                            For Many sales teams to achieve consistent revenue growth the most important
+                                            requirement is to increase the amount of qualified meetings with new
+                                            potential clients.
+                                        </p>
+                                        <a href="#">
+                                            <div class="arrow">
+                                                <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12.8538 5.64747C12.9474 5.741 13 5.8678 13 6C13 6.1322 12.9474 6.259 12.8538 6.35253L7.8536 11.3412C7.80782 11.3902 7.75262 11.4295 7.69129 11.4568C7.62995 11.4841 7.56374 11.4987 7.4966 11.4999C7.42946 11.5011 7.36278 11.4888 7.30052 11.4637C7.23825 11.4386 7.1817 11.4013 7.13422 11.3539C7.08674 11.3065 7.0493 11.2501 7.02416 11.188C6.99901 11.1259 6.98666 11.0593 6.98784 10.9923C6.98903 10.9253 7.00372 10.8593 7.03105 10.7981C7.05838 10.7369 7.09778 10.6818 7.14691 10.6362L11.2937 6.49887L0.500018 6.49887C0.367406 6.49887 0.240224 6.44631 0.146453 6.35275C0.0526807 6.2592 7.07478e-07 6.13231 7.13262e-07 6C7.19045e-07 5.86769 0.0526807 5.7408 0.146453 5.64725C0.240224 5.55369 0.367406 5.50113 0.500018 5.50113L11.2937 5.50113L7.14691 1.36385C7.09778 1.31818 7.05838 1.2631 7.03105 1.20191C7.00372 1.14071 6.98903 1.07465 6.98784 1.00767C6.98666 0.940686 6.99901 0.874151 7.02416 0.812033C7.0493 0.749915 7.08674 0.693487 7.13422 0.646115C7.1817 0.598743 7.23826 0.561398 7.30052 0.536308C7.36278 0.511217 7.42946 0.498896 7.4966 0.500077C7.56374 0.501259 7.62995 0.515921 7.69129 0.543187C7.75262 0.570453 7.80782 0.609765 7.8536 0.658779L12.8538 5.64747Z"
+                                                        fill="#F69524" />
+                                                </svg>
+                                            </div>
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="services__item">
+                                    <div class="services__item-icon">
+                                        <img src="img/svg/service_icon2.svg" alt="icon">
+                                    </div>
+                                    <div class="services__item-content">
+                                        <h3>
+                                            Sales Consultancy and Strategy
+                                        </h3>
+                                        <p>
+                                            At SC our consultancy service goes beyond just the basics of lead generation
+                                            . We work with you on sales planning, management and measurement of
+                                            executing sales strategies and business development.
+                                        </p>
+                                        <a href="#">
+                                            <div class="arrow">
+                                                <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12.8538 5.64747C12.9474 5.741 13 5.8678 13 6C13 6.1322 12.9474 6.259 12.8538 6.35253L7.8536 11.3412C7.80782 11.3902 7.75262 11.4295 7.69129 11.4568C7.62995 11.4841 7.56374 11.4987 7.4966 11.4999C7.42946 11.5011 7.36278 11.4888 7.30052 11.4637C7.23825 11.4386 7.1817 11.4013 7.13422 11.3539C7.08674 11.3065 7.0493 11.2501 7.02416 11.188C6.99901 11.1259 6.98666 11.0593 6.98784 10.9923C6.98903 10.9253 7.00372 10.8593 7.03105 10.7981C7.05838 10.7369 7.09778 10.6818 7.14691 10.6362L11.2937 6.49887L0.500018 6.49887C0.367406 6.49887 0.240224 6.44631 0.146453 6.35275C0.0526807 6.2592 7.07478e-07 6.13231 7.13262e-07 6C7.19045e-07 5.86769 0.0526807 5.7408 0.146453 5.64725C0.240224 5.55369 0.367406 5.50113 0.500018 5.50113L11.2937 5.50113L7.14691 1.36385C7.09778 1.31818 7.05838 1.2631 7.03105 1.20191C7.00372 1.14071 6.98903 1.07465 6.98784 1.00767C6.98666 0.940686 6.99901 0.874151 7.02416 0.812033C7.0493 0.749915 7.08674 0.693487 7.13422 0.646115C7.1817 0.598743 7.23826 0.561398 7.30052 0.536308C7.36278 0.511217 7.42946 0.498896 7.4966 0.500077C7.56374 0.501259 7.62995 0.515921 7.69129 0.543187C7.75262 0.570453 7.80782 0.609765 7.8536 0.658779L12.8538 5.64747Z"
+                                                        fill="#F69524" />
+                                                </svg>
+                                            </div>
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="services__item">
+                                    <div class="services__item-icon">
+                                        <img src="img/svg/service_icon3.svg" alt="icon">
+                                    </div>
+                                    <div class="services__item-content">
+                                        <h3>
+                                            Marketing Activity
+                                        </h3>
+                                        <p>
+                                            Your Marketing activity should support and work alongside your sales
+                                            efforts, a shared strategy focused strongly on your clients needs. At SC we
+                                            can help you with individual projects or needs or create a dynamic
+                                            comprehensive marketing strategy.
+                                        </p>
+                                        <a href="#">
+                                            <div class="arrow">
+                                                <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12.8538 5.64747C12.9474 5.741 13 5.8678 13 6C13 6.1322 12.9474 6.259 12.8538 6.35253L7.8536 11.3412C7.80782 11.3902 7.75262 11.4295 7.69129 11.4568C7.62995 11.4841 7.56374 11.4987 7.4966 11.4999C7.42946 11.5011 7.36278 11.4888 7.30052 11.4637C7.23825 11.4386 7.1817 11.4013 7.13422 11.3539C7.08674 11.3065 7.0493 11.2501 7.02416 11.188C6.99901 11.1259 6.98666 11.0593 6.98784 10.9923C6.98903 10.9253 7.00372 10.8593 7.03105 10.7981C7.05838 10.7369 7.09778 10.6818 7.14691 10.6362L11.2937 6.49887L0.500018 6.49887C0.367406 6.49887 0.240224 6.44631 0.146453 6.35275C0.0526807 6.2592 7.07478e-07 6.13231 7.13262e-07 6C7.19045e-07 5.86769 0.0526807 5.7408 0.146453 5.64725C0.240224 5.55369 0.367406 5.50113 0.500018 5.50113L11.2937 5.50113L7.14691 1.36385C7.09778 1.31818 7.05838 1.2631 7.03105 1.20191C7.00372 1.14071 6.98903 1.07465 6.98784 1.00767C6.98666 0.940686 6.99901 0.874151 7.02416 0.812033C7.0493 0.749915 7.08674 0.693487 7.13422 0.646115C7.1817 0.598743 7.23826 0.561398 7.30052 0.536308C7.36278 0.511217 7.42946 0.498896 7.4966 0.500077C7.56374 0.501259 7.62995 0.515921 7.69129 0.543187C7.75262 0.570453 7.80782 0.609765 7.8536 0.658779L12.8538 5.64747Z"
+                                                        fill="#F69524" />
+                                                </svg>
+                                            </div>
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="services__item">
+                                    <div class="services__item-icon">
+                                        <img src="img/svg/service_icon4.svg" alt="icon">
+                                    </div>
+                                    <div class="services__item-content">
+                                        <h3>
+                                            Design and Creative Services
+                                        </h3>
+                                        <p>
+                                            To support your marketing activity our experienced creatives can create
+                                            tailored designs across all materials, from brand development, website
+                                            creation, brochures, event material
+                                        </p>
+                                        <a href="#">
+                                            <div class="arrow">
+                                                <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12.8538 5.64747C12.9474 5.741 13 5.8678 13 6C13 6.1322 12.9474 6.259 12.8538 6.35253L7.8536 11.3412C7.80782 11.3902 7.75262 11.4295 7.69129 11.4568C7.62995 11.4841 7.56374 11.4987 7.4966 11.4999C7.42946 11.5011 7.36278 11.4888 7.30052 11.4637C7.23825 11.4386 7.1817 11.4013 7.13422 11.3539C7.08674 11.3065 7.0493 11.2501 7.02416 11.188C6.99901 11.1259 6.98666 11.0593 6.98784 10.9923C6.98903 10.9253 7.00372 10.8593 7.03105 10.7981C7.05838 10.7369 7.09778 10.6818 7.14691 10.6362L11.2937 6.49887L0.500018 6.49887C0.367406 6.49887 0.240224 6.44631 0.146453 6.35275C0.0526807 6.2592 7.07478e-07 6.13231 7.13262e-07 6C7.19045e-07 5.86769 0.0526807 5.7408 0.146453 5.64725C0.240224 5.55369 0.367406 5.50113 0.500018 5.50113L11.2937 5.50113L7.14691 1.36385C7.09778 1.31818 7.05838 1.2631 7.03105 1.20191C7.00372 1.14071 6.98903 1.07465 6.98784 1.00767C6.98666 0.940686 6.99901 0.874151 7.02416 0.812033C7.0493 0.749915 7.08674 0.693487 7.13422 0.646115C7.1817 0.598743 7.23826 0.561398 7.30052 0.536308C7.36278 0.511217 7.42946 0.498896 7.4966 0.500077C7.56374 0.501259 7.62995 0.515921 7.69129 0.543187C7.75262 0.570453 7.80782 0.609765 7.8536 0.658779L12.8538 5.64747Z"
+                                                        fill="#F69524" />
+                                                </svg>
+                                            </div>
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -89,7 +229,7 @@
             </section>
         </main>
 
-        <footer class="footer">
+        <footer class="footer single-footer">
             <div class="container">
                 <div class="footer__inner">
                     <nav class="footer__menu">
@@ -121,6 +261,16 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="footer__logo">
+                        <a href="index.html">
+                            <img src="img/svg/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="footer__info">
+                        <p>
+                            Jubilee House, 3 The Dr, Great Warley, Warley, Brentwood CM13 3FR
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>

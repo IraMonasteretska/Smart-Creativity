@@ -1,0 +1,88 @@
+.servtop {
+    position: relative;
+    background: $violetgradient;
+    margin-top: 100px;
+
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 60%;
+    }
+}
+
+.servtop__content {
+    max-width: 555px;
+    padding: 74px 0;
+    position: relative;
+
+    .secttitle {
+        margin-bottom: 16px;
+    }
+}
+
+.servtop__image {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+    img {
+        width: 335px;
+        background-size: cover;
+    }
+}
+
+
+//  --- === ADAPTIVE === --- //
+
+@media (max-width:1199.8px) {
+    .servtop__image {
+        text-align: right;
+    }
+}
+
+@media (max-width:991.8px) {
+    .servtop__content {
+
+        p,
+        .secttitle {
+            color: #fff;
+        }
+    }
+    .servtop .bg {
+        top: initial;
+        bottom: 0;
+        height: 50%;
+        width: auto;
+    }
+    .servtop__image {
+        text-align: center;
+    }
+}
+@media (max-width:767.8px) {
+    .servtop .bg {
+        height: 40%;
+    }
+    .servtop__content {
+        padding: 55px 0 85px;
+    }
+}
+
+@media (max-width:575.8px) {
+    .servtop__image {
+        text-align: right;
+    }
+}
+
+@media (max-width:424.8px) {
+    .servtop__content {
+        padding: 35px 0 90px;
+    }
+    .servtop__image img{
+        width: 85vw;
+    }
+    .servtop .bg {
+        height: 50vw;
+    }
+}

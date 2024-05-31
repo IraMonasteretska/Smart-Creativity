@@ -2,6 +2,10 @@
     background: $violetgradient;
     position: relative;
     z-index: 2;
+
+    &.single-footer {
+        padding: 40px 0;
+    }
 }
 
 .footer__inner {
@@ -76,7 +80,19 @@
 
 
 
+@media (max-width: 991.8px) {
+    .footer.single-footer {
+        padding: 25px 0 30px;
+    }
+}
+
 @media (max-width: 575.8px) {
+    .footer__inner {
+        padding: 50px 0 10px;
+    }
+    .footer.single-footer {
+        padding: 0;
+    }
 
     .footer__menu {
         padding-top: 32px;
