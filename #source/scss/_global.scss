@@ -61,6 +61,9 @@ body {
     font-family: "Montserrat", sans-serif;
     color: $black;
     background-color: #f5f5f5;
+    &.hidden{
+        overflow: hidden;
+    }
 }
 
 .main {
@@ -140,5 +143,11 @@ body {
 @media(max-width:767.8px) {
     .secttitle {
         font-size: 26px;
+    }
+}
+
+@media(max-width:424.8px) {
+    .secttitle {
+        font-size: 24px;
     }
 }

@@ -47,3 +47,70 @@
         font-size: 18px;
     }
 }
+
+
+
+// ----------------- ADAPTIVE --------------- //
+
+@media (max-width: 1199.8px) {
+    .footer__inner {
+        flex-direction: column;
+        padding: 50px 0 30px;
+    }
+
+    .footer__logo {
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .footer__info {
+        order: 2;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer__menu {
+        order: 3;
+    }
+}
+
+
+
+@media (max-width: 575.8px) {
+
+    .footer__menu {
+        padding-top: 32px;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 100vw;
+            height: 1px;
+            width: 100vw;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        a {
+            font-size: 16px;
+        }
+
+        ul {
+            flex-wrap: wrap;
+
+            li {
+                width: 50%;
+                margin: 0 0 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 424.8px) {
+    .footer__info p {
+        font-size: 16px;
+    }
+}

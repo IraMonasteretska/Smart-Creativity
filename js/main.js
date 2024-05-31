@@ -10,4 +10,12 @@ $(document).ready(function () {
             $('.header').removeClass('change-bg');
         }
     });
+
+
+    // MOBILE MENU ------------------- //
+    $('.burger').click(function () {
+        $(this).toggleClass('open');
+        $('.header__menu').toggleClass('open');
+        $('body').toggleClass('hidden');
+    });
 });
