@@ -118,6 +118,82 @@
     }
 }
 
+.el2 {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+}
+
+.el3 {
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+
+.calendarwrapper {
+    min-height: 500px;
+}
+
+.backlink {
+    position: relative;
+    padding-left: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url('../img/book/back.svg') no-repeat center / 100%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.3s;
+    }
+
+    &:hover {
+        &::after {
+            transform: translate(-5px, -50%);
+        }
+    }
+}
+
+.bookmeetingwrapdescr {
+    padding-top: 40px;
+
+    p {
+        max-width: 442px;
+        margin: 0;
+        font-size: 16px;
+        color: rgb(34, 34, 34);
+    }
+
+    .title {
+        margin-bottom: 16px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 140%;
+
+    }
+}
+
+.bokkmeettab {
+    display: none;
+
+    &.show {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
 @media(max-width:1599.8px) {
 
     .ourservices {
@@ -170,15 +246,17 @@
 
     .ourservices .boxtitle {
         font-size: 24px;
+        text-align: left;
+        margin-bottom: 24px;
     }
 
     .ourservices .servbox .booknowbtn {
-        max-width: 100%;
-        flex: 0 0 100%;
+        max-width: 160px;
+        flex: 0 0 160px;
     }
 
     .ourservices .servbox .leftinfo .title {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .meetingsect {
@@ -197,4 +275,18 @@
             margin-top: 0;
         }
     }
+
+    .bookmeetingwrapdescr .title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .calendarwrapper {
+        min-height: 300px;
+    }
+
+    .ourservices .servbox .leftinfo p {
+        margin-bottom: 10px;
+    }
+        
 }

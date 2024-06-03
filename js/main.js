@@ -29,4 +29,27 @@ $(document).ready(function () {
         duration: 800,
         easing: "ease-in-out",
     });
+
+
+
+    $('.booknowbtn').click(function (e) {
+        e.preventDefault();
+        $('.bokkmeettabbtn').hide();
+        $('.bokkmeettab').show();
+    })
+
+    $('.backlink').click(function (e) {
+        e.preventDefault();
+        $('.bokkmeettabbtn').show();
+        $('.bokkmeettab').hide();
+    })
+    // selects
+    if ($('select').length) {
+        $('.styledselect').select2({
+            placeholder: "Select a state",
+            minimumResultsForSearch: Infinity,
+        });
+    }
+
+
 });

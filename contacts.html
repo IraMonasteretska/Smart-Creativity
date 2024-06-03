@@ -9,16 +9,17 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/select2.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="pagewrapper">
-        <header class="header">
+        <header class="header white-bg">
             <div class="container">
                 <div class="header__inner">
                     <div class="header__logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img class="white" src="img/svg/logo.svg" alt="logotype">
                             <img class="dark" src="img/svg/logo-dark.svg" alt="logotype">
                         </a>
@@ -36,10 +37,10 @@
                                 </a>
                                 <ul>
                                     <li>
-                                        <a href="#">Lead Generation</a>
+                                        <a href="service_lead_generation.html">Lead Generation</a>
                                     </li>
                                     <li>
-                                        <a href="#">Marketing  Activity</a>
+                                        <a href="#">Marketing Activity</a>
                                     </li>
                                     <li>
                                         <a href="#">Design and Creative Services</a>
@@ -81,28 +82,80 @@
         </header>
 
         <main class="main">
-            <section class="heroscreen">
-                <img src="img/main_hero_bg.png" alt="image" class="bg">
+            <section class="topsect">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="heroscreen__content">
-                                <h1>
-                                    Sales, Marketing And<br>
-                                    Revenue Transformation
-                                    with a creative flair
-                                </h1>
-                                <p>
-                                    Smart Creativity helps you unlock your business potential by providing you with qualified leads, crucial to driving and fuelling sales growth. With proactive telemarketing activity, supported by email and LinkedIn outreach we are able to achieve the best possible results. All tailored to connect your business to the most appropriate individuals in the companies you want to engage with.
-                                </p>
-                                <a href="book-meeting.html" class="sect-btn">
-                                    Book a meeting
-                                </a>
+                    <div class="topsect__inner">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="topsect__content dt">
+                                    <h1 class="secttitle">
+                                        Contacts
+                                    </h1>
+                                    <p class="descr">
+                                        SMART Creativity – SALES, MARKETING AND REVENUE<br> Transformation with a
+                                        creative
+                                        flair
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="topsect__image">
+                                    <picture>
+                                        <source srcset="img/book/ill-mob1.svg" media="(max-width: 767.8px)">
+                                        <img src="img/book/ill1.svg" alt="image">
+                                    </picture>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="heroscreen__image">
-                                <img src="img/svg/main_hero_img.svg" alt="image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contsect">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="contact__left">
+                                <p class="cltitle">
+                                    Contact information
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a href="tel:02045871378">
+                                            <img src="img/book/tel-icon.svg" alt="tel">
+                                            <span> 0204 5871378</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:hello@smartcreativity.co.uk">
+                                            <img src="img/book/email-icon.svg" alt="tel">
+                                            <span>hello@smartcreativity.co.uk</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/book/loc-icon.svg" alt="tel">
+                                            <span>Jubilee House, 3 The Drive, Great<br> Warley, Warley, Brentwood CM13
+                                                3FR</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="contact__right">
+                                <p class="title">Contact Form</p>
+                                <form action="#">
+                                    <div class="inputfield">
+                                        <label for="sel1">Choose a topic</label>
+                                        <select name="" id="sel1" class="styledselect" data-placeholder="Select">
+                                            <option></option>
+                                            <option value="1">Model 1</option>
+                                            <option value="2">Model 2</option>
+                                            <option value="3">Model 3</option>
+                                        </select>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -110,10 +163,10 @@
             </section>
         </main>
 
-        <footer class="footer">
+        <footer class="footer single-footer">
             <div class="container">
                 <div class="footer__inner">
-                    <nav class="footer__menu">
+                    <nav class="footer__menu v2">
                         <ul>
                             <li>
                                 <a href="index.html">
@@ -130,6 +183,7 @@
                                     About
                                 </a>
                             </li>
+                            <br>
                             <li>
                                 <a href="book-meeting.html">
                                     Book a meeting
@@ -142,6 +196,18 @@
                             </li>
                         </ul>
                     </nav>
+
+                    <div class="footer__logo">
+                        <a href="index.html">
+                            <img src="img/svg/logo.svg" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="footer__info">
+                        <p>
+                            Jubilee House, 3 The Dr, Great Warley, Warley, Brentwood CM13 3FR
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -149,6 +215,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/select2.js"></script>
     <script src="js/main.js"></script>
 
 

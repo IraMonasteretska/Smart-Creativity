@@ -1,0 +1,116 @@
+.contsect {
+    padding: 130px 0;
+}
+
+.contact__left {
+    .cltitle {
+        font-size: 32px;
+        line-height: 140%;
+        font-weight: 600;
+        color: #222;
+        margin-bottom: 40px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-bottom: 22px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                font-size: 22px;
+                color: #222;
+                font-weight: 600;
+
+                img {
+                    width: 100%;
+                    max-width: 50px;
+                    flex: 0 0 50%;
+                }
+
+                span {
+                    width: 100%;
+                    display: block;
+                    max-width: calc(100% - 50px);
+                    flex: 0 0 calc(100% - 50px);
+                    padding-left: 4px;
+                }
+            }
+
+            &:last-child {
+                a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.contact__right {
+    border-radius: 20px;
+    background: linear-gradient(45deg, #E9EEF3, #D7DFE6);
+    padding: 40px;
+
+    .title {
+        color: #222;
+        font-size: 32px;
+        line-height: 140%;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .inputfield {
+        position: relative;
+
+        label {
+            padding-left: 16px;
+            display: block;
+            margin: 0;
+            font-size: 16px;
+            color: rgb(34, 34, 34);
+        }
+
+        .select2 {
+            width: 100% !important;
+        }
+
+        .select2-container--default .select2-selection--single {
+            height: 64px;
+            border-radius: 10px;
+            background: #F9F9F9;
+            border: none;
+            box-shadow: 0 4px 9px rgba(229, 229, 229, 0.25);
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            line-height: 64px;
+            padding-left: 16px;
+            padding-right: 30px;
+            font-size: 16px;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__arrow b {
+            display: none;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            width: 24px;
+            height: 24px;
+            background: url('../img/book/iconamoon_arrow-down-2-light.svg') no-repeat center / 100%;
+            top: 20px;
+            right: 10px;
+        }
+
+
+        // iconamoon_arrow-down-2-light
+    }
+}
