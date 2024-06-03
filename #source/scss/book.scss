@@ -1,0 +1,200 @@
+.topsect__content.dt {
+    .secttitle {
+        margin-bottom: 16px;
+    }
+
+    .descr {
+        margin: 0;
+        color: #fff;
+        line-height: 140%;
+    }
+}
+
+.topsect__inner .row {
+    width: 100%;
+}
+
+.meetingsect {
+    padding: 40px 0 130px;
+    position: relative;
+
+    .el1 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.ourservices {
+    border-radius: 20px;
+    background: #fff;
+    padding: 40px;
+    margin-top: 90px;
+
+    .boxtitle {
+        text-align: center;
+        font-size: 46px;
+        font-weight: 600;
+        line-height: 140%;
+        margin-bottom: 24px;
+    }
+
+    .servbox {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .leftinfo {
+            width: 100%;
+            max-width: calc(100% - 160px);
+            flex: 0 0 calc(100% - 160px);
+            padding-left: 20px;
+            border-left: 1px solid rgb(250, 187, 2);
+
+            p {
+                font-size: 16px;
+                color: rgb(34, 34, 34);
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+            }
+
+            .title {
+                margin-bottom: 12px;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 140%;
+                color: rgb(34, 34, 34);
+            }
+        }
+
+        .booknowbtn {
+            width: 100%;
+            max-width: 160px;
+            flex: 0 0 160px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            background: rgb(250, 187, 2);
+            min-height: 48px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s;
+
+            img {
+                margin-left: 12px;
+                transition: 0.3s;
+            }
+
+            &:hover {
+                filter: brightness(110%);
+
+                img {
+                    transform: translateX(8px);
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.footer__menu.v2 {
+    ul {
+        display: block;
+    }
+
+    li {
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media(max-width:1599.8px) {
+
+    .ourservices {
+        margin-top: 60px;
+    }
+
+    .meetingsect {
+        padding-bottom: 100px;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+    .ourservices .boxtitle {
+        font-size: 32px;
+    }
+
+    .ourservices .servbox .leftinfo .title {
+        font-size: 20px;
+    }
+
+    .ourservices .servbox .leftinfo p {
+        margin-bottom: 5px;
+    }
+
+    .ourservices {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .topsect__content.dt .descr br {
+        display: none;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .ourservices {
+        padding: 15px;
+        margin-top: 0;
+    }
+
+    .ourservices .servbox .leftinfo {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .ourservices .boxtitle {
+        font-size: 24px;
+    }
+
+    .ourservices .servbox .booknowbtn {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .ourservices .servbox .leftinfo .title {
+        font-size: 18px;
+    }
+
+    .meetingsect {
+        padding-bottom: 60px;
+    }
+
+    .meetingsect .el1 {
+        width: 160px;
+    }
+
+    .footer__menu.v2 ul {
+        display: flex;
+
+        li {
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+    }
+}

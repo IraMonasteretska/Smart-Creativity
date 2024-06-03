@@ -18,4 +18,15 @@ $(document).ready(function () {
         $('.header__menu').toggleClass('open');
         $('body').toggleClass('hidden');
     });
+
+
+
+    //  ANIMATION WITH SCROLL ------------------ //
+
+    AOS.init({
+        once: true,
+        offset: -50,
+        duration: 800,
+        easing: "ease-in-out",
+    });
 });

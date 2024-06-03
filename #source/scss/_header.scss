@@ -303,6 +303,9 @@
 }
 
 @media (max-width:575.8px) {
+    .header__inner{
+        height: 76px;
+    }
     .header__menu {
         padding-top: 60px;
     }
