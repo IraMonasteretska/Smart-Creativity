@@ -1,0 +1,158 @@
+.topsect__image.ab {
+    img {
+        position: absolute;
+        right: 95px;
+        bottom: 0;
+    }
+}
+
+.topsect {
+    position: relative;
+}
+
+.whoweare {
+    padding: 160px 0 130px;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .circle1 {
+        position: absolute;
+       right: 0;
+        top: 25%;
+    }
+
+    .circle2 {
+        position: absolute;
+        left: 0;
+        top: 44%;
+    }
+
+    .imgwrap {
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+
+    .row {
+        margin-bottom: 130px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.whoweare__text {
+    p {
+        font-size: 16px;
+        margin: 0;
+        line-height: 140%;
+        color: rgb(34, 34, 34);
+    }
+
+    .title {
+        margin-bottom: 30px;
+        font-size: 46px;
+        font-weight: 600;
+    }
+}
+
+@media(max-width:1599.8px) {
+    .whoweare {
+        padding: 100px 0 100px;
+    }
+
+    .whoweare .row {
+        margin-bottom: 100px;
+    }
+
+    .whoweare__text .title {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+    .whoweare__text .title {
+        font-size: 32px;
+    }
+
+    .whoweare .circle1 {
+        width: 280px;
+    }
+
+    .whoweare .circle2 {
+        width: 160px;
+    }
+
+    .topsect__image.ab img {
+        max-width: 500px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .topsect__image.ab img {
+        max-width: 450px;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .topsect__image.ab img {
+        position: relative;
+        max-width: 90%;
+        right: initial;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .topsect.ab .topsect__inner {
+        padding-bottom: 0;
+    }
+
+    .whoweare__text {
+        margin-bottom: 25px;
+    }
+
+    .whoweare .row {
+        margin-bottom: 50px;
+    }
+
+    .whoweare {
+        padding: 60px 0;
+    }
+
+
+
+    
+}
+
+@media(max-width:575.8px) {
+    .whoweare__text .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .circle1, .circle2 {
+        display: none;
+    }
+
+    .whoweare .row {
+        margin-bottom: 30px;
+    }
+
+    .whoweare .imgwrap img {
+        border-radius: 10px;
+    }
+
+}
